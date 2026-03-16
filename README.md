@@ -68,7 +68,24 @@ void yyerror(const char *msg) {
 }
 ```
 # Output
-<img width="747" height="425" alt="image" src="https://github.com/user-attachments/assets/ca7921b7-75b0-4ed7-989d-6d629bb535b2" />
+```
+Microsoft Windows [Version 10.0.26200.7840]
+(c) Microsoft Corporation. All rights reserved.
 
+C:\Dev-Cpp\TDM-GCC-64\bin>flex exp4_0058.l
+
+C:\Dev-Cpp\TDM-GCC-64\bin>bison -dy exp4_0058.y
+
+C:\Dev-Cpp\TDM-GCC-64\bin>gcc y.tab.c lex.yy.c -w
+
+C:\Dev-Cpp\TDM-GCC-64\bin>a.exe
+Enter a variable name:
+5
+Invalid variable name
+C:\Dev-Cpp\TDM-GCC-64\bin>a.exe
+Enter a variable name:
+a
+Valid variable: a
+```
 # Result
 A YACC program to recognize a valid variable which starts with a letter followed by any number of letters or digits is executed successfully and the output is verified.
